@@ -7,5 +7,5 @@ const converted = parseInt(firstArg);
 if (!Number.isNaN(converted)) {
   console.log(`My number : ${converted}`);
 } else {
-    console.log('Not a number');
+  console.log('Not a number');
 }
