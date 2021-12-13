@@ -7,6 +7,8 @@ sorted.shift();
 sorted.shift();
 console.log(sorted);
 
+
+
 if (argsArr.length < 3) {
   console.log(0);
 } else {
