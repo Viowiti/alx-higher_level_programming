@@ -1,20 +1,11 @@
 #!/usr/bin/node
-
-const myArr = process.argv;
-const firstArg = myArr[2];
-const converted = parseInt(firstArg);
-if (Number.isNaN(converted)) {
+if (process.argv[2] === undefined || isNaN(process.argv[2])) {
   console.log('Missing size');
 } else {
-  let string = '';
-  for (let i = 0; i < converted; i++) { // external loop
-    for (let j = 0; j < converted; j++) { // internal loop
-      string += '*';
-    }
-    // newline after each row
-    
-    string += '\n';
+  const x = Number(process.argv[2]);
+  let i = 0;
+  while (i < x) {
+    console.log('X'.repeat(x));
+    i++;
   }
-  // printing the string
-  console.log(string);
 }
