@@ -3,7 +3,6 @@
 const myArr = process.argv;
 const firstArg = myArr[2];
 const converted = parseInt(firstArg);
-
 if (Number.isNaN(converted)) {
   console.log('Missing size');
 } else {
@@ -13,6 +12,7 @@ if (Number.isNaN(converted)) {
       string += '*';
     }
     // newline after each row
+    
     string += '\n';
   }
   // printing the string
