@@ -1,12 +1,10 @@
 #!/usr/bin/node
-
-module.exports = class Rectangle {
+class Rectangle {
   constructor (w, h) {
-    if (parseInt(w) > 0 || parseInt(h) > 0) {
+    if (((w = parseInt(w)) > 0) && ((h = parseInt(h)) > 0)) {
       this.width = w;
       this.height = h;
     }
-    this.width = w;
-    this.height = h;
   }
-};
+}
+module.exports = Rectangle;
